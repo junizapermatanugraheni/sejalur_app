@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
+const tSplashScreenPage2Color = Colors.white;
 const tSplashScreenPage1Color = Colors.white;
-const tSplashScreenPage2Color = Colors.yellow;
-const tSplashScreenPage3Color = Colors.yellowAccent;
+const tSplashScreenPage3Color = Colors.white;
