@@ -1,80 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
-import 'package:sijalur_app/src/constants/colors.dart';
-import 'package:sijalur_app/src/constants/image_string.dart';
-import 'package:sijalur_app/src/constants/text_string.dart';
-import 'package:sijalur_app/src/features/authentication/models/model_splash_screen.dart';
-import 'package:sijalur_app/src/features/authentication/screens/splash_screen/splash_screen_widget.dart';
+import 'package:sijalur_app/src/features/authentication/controllers/splash_screen_controller.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class SplashScreen extends StatefulWidget{
-  SplashScreen({Key? key}) : super(key: key);
+class SplashScreen extends StatelessWidget{
+  const SplashScreen({Key? key}) : super(key: key);
 
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  final controller = LiquidController();
-
-  int currentPage = 0;
 
   @override
   Widget build(BuildContext context){
-    final size = MediaQuery.of(context).size;
-
-    final pages = [
-      SplashScreenPageWidget(
-        model: SplashScreenModel(
-          title: tSplashScreenTitle1,
-          image: tSplashScreenImage1,
-          subTitle: tSplashScreenSubTitle1,
-          bgColor: tSplashScreenPage1Color,
-          height: size.height,
-        ),
-      ),
-      SplashScreenPageWidget(
-        model: SplashScreenModel(
-          title: tSplashScreenTitle2,
-          image: tSplashScreenImage2,
-          subTitle: tSplashScreenSubTitle2,
-          bgColor: tSplashScreenPage2Color,
-          height: size.height,
-        ),
-      ),
-      SplashScreenPageWidget(
-        model: SplashScreenModel(
-          title: tSplashScreenTitle3,
-          image: tSplashScreenImage3,
-          subTitle: tSplashScreenSubTitle3,
-          bgColor: tSplashScreenPage3Color,
-          height: size.height,
-        ),
-      ),
-    ];
-    // final controller = LiquidController();
-    // int currentPage = 0;
-
+    final ssController = SplashScreenController();
     return Scaffold(
       body: Stack(
         alignment: Alignment.center,
         children: [
           LiquidSwipe(
-            pages: pages,
+            pages: ssController.pages,
             enableSideReveal: true,
-            liquidController: controller,
-            onPageChangeCallback: onPageChangedCallback,
+            liquidController: ssController.controller,
+            onPageChangeCallback: ssController.onPageChangedCallback,
+          ),
+          Positioned(
+            top: 50,
+            left: 10.0,
+            child: OutlinedButton(
+              onPressed: () => ssController.animatedToBackSlide(),
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.black87, side: const BorderSide(color: Colors.white),
+                shape: const CircleBorder(),
+                padding: const EdgeInsets.all(1.0),
+              ),
+              child: const Icon(Icons.arrow_back_ios_new_rounded),
+            ),
           ),
           Positioned(
             bottom: 20.0,
             right: 40.0,
             child: OutlinedButton(
-              onPressed: (){
-                int nextPage = controller.currentPage + 1;
-                controller.animateToPage(page: nextPage);
-              },
+              onPressed: () => ssController.animatedToNextSlide(),
               style: ElevatedButton.styleFrom(
-                foregroundColor: Colors.white, side: const BorderSide(color: Colors.black26),
+                foregroundColor: Colors.white, side: const BorderSide(color: Colors.white),
                 shape: const CircleBorder(),
                 padding: const EdgeInsets.all(1.0),
               ),
@@ -90,8 +55,8 @@ class _SplashScreenState extends State<SplashScreen> {
             bottom: 130,
             left: 40,
             child: AnimatedSmoothIndicator(
-              activeIndex: controller.currentPage,
               count: 3,
+              activeIndex: ssController.currentPage.value,
               effect: const WormEffect(
                 activeDotColor: Colors.blueGrey,
                 dotHeight: 10.0,
@@ -102,12 +67,6 @@ class _SplashScreenState extends State<SplashScreen> {
         ],
       ),
     );
-  }
-
-  void onPageChangedCallback(int activePageIndex){
-    setState(() {
-      currentPage = activePageIndex;
-    });
   }
 }
 

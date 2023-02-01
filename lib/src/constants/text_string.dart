@@ -6,4 +6,28 @@ const String tSplashScreenSubTitle1 = " Sejalur.id menyediakan layanan perjalana
 const String tSplashScreenSubTitle2 = "Pengguna bisa memilih layanan private  dan layanan sharing ";
 const String tSplashScreenSubTitle3 = "Pengguna dapat menghemat biaya perjalanan";
 
+//Text Login Screen
+const String tLoginTitle = "Login Penumpang";
+const String tLoginForgot = "Forgot Password ?";
+const String tLoginSubRegis = "don't have account ? ";
+const String tLoginRegis = "Register";
+const String tLabelUser = "Email";
+const String tLabelPass = "Password";
+const String tLogin = "Login";
+
+//Text Register Screen
+const String tTitleHeader = "Registrasi Penumpang";
+const String tRegisUser = "Username";
+const String tRegisEmail = "Email";
+const String tRegisPass = "Password";
+const String tRegisPassKonf = "Konfirmasi Password";
+const String tRegisIdent = "Nomor Identitas (KTP/Paspor)";
+const String tRegisTelp = "Nomor Telepon";
+const String tRegisAlamat = "Alamat";
+const String tRegisJkl = "Laki - laki";
+const String tRegisJkp = "Perempuan";
+const String tRegisButton = "Registrasi";
+
+
+
 

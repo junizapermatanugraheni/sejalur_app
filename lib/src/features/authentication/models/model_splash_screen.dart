@@ -5,13 +5,13 @@ class SplashScreenModel{
   final String title;
   final String subTitle;
   final Color bgColor;
-  final double height;
+  // final double height;
 
   SplashScreenModel({
     required this.image,
     required this.title,
     required this.subTitle,
     required this.bgColor,
-    required this.height,
+    // required this.height,
 });
 }

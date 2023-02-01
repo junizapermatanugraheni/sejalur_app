@@ -13,6 +13,7 @@ class SplashScreenPageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.all(tDefaultSize) ,
       color: model.bgColor,
@@ -25,7 +26,9 @@ class SplashScreenPageWidget extends StatelessWidget {
               ),
             ],
           ),
-          Image(image: AssetImage(model.image), height: model.height * 0.4,),
+          Image(
+            image: AssetImage(model.image),
+            height: size.height * 0.4,),
           Column(
             children: [
               Text(model.subTitle, textAlign: TextAlign.center, style: TextStyle(fontSize: 15),),
