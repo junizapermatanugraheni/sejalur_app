@@ -9,60 +9,67 @@ class RegisterForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 120.0),
+        padding: const EdgeInsets.symmetric(vertical: 100.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
+                prefixIcon: Icon(Icons.supervisor_account),
+                prefixIconColor: Colors.orange,
+                labelText: tRegisName,
+              ),
+            ),
+            TextFormField(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.supervisor_account),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisUser,
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.email_rounded),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisEmail,
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisPass,
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisPassKonf,
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.credit_card),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisIdent,
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.phone),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisTelp,
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.home_filled),
                 prefixIconColor: Colors.orange,
                 labelText: tRegisAlamat,
               ),
             ),
-            RegisterWidget(),
+            const RegisterWidget(),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

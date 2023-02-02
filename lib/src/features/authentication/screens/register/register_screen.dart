@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sijalur_app/src/features/authentication/screens/register/register_form_widget.dart';
-// import 'package:sijalur_app/src/constants/text_string.dart';
-
-// import 'package:sijalur_app/src/features/authentication/screens/register/register_widget.dart';
-
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -15,18 +11,20 @@ class RegisterScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: Text("Registrasi Penumpang", style: TextStyle(color: Colors.black87)),
+          title: const Text("Registrasi Penumpang", style: TextStyle(color: Colors.black87)),
           leading: IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios,
               color: Colors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
         ),
         body: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
               child: Stack(
                 children: [
                   Center(
@@ -46,9 +44,7 @@ class RegisterScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    child: RegisterForm(),
-                  ),
+                  const RegisterForm(),
                 ],
               ),
             ),

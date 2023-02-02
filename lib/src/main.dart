@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sijalur_app/src/features/authentication/screens/register/register_screen.dart';
-// import 'package:sijalur_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
+import 'package:sijalur_app/src/features/authentication/screens/login/login_screen.dart';
+// import 'package:sijalur_app/src/features/authentication/screens/splashscreen/splash_screen.dart';
 import 'package:sijalur_app/src/utils/theme/theme.dart';
-
-// import 'features/authentication/screens/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: RegisterScreen(),
+      home: const LoginScreen(),
     );
   }
 }

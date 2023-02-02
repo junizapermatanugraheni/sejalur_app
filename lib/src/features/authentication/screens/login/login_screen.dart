@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:sijalur_app/src/constants/text_string.dart';
 import 'login_form_widget.dart';
 import 'login_header_widget.dart';
 
@@ -16,14 +15,14 @@ class LoginScreen extends StatelessWidget{
             padding: const EdgeInsets.symmetric(vertical: 120.0, horizontal: 20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
+              children: const [
                 LoginHeaderWidget(),
-                const LoginForm(),
-          ]
-        )
-        )
-      )
-      )
+                LoginForm(),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

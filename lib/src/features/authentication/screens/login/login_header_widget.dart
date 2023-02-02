@@ -12,7 +12,7 @@ class LoginHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
+      children: const [
         Image(image: AssetImage(tLogoLoginScreen)),
         SizedBox(height: tFormHeight,),
         Text(tLoginTitle, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),

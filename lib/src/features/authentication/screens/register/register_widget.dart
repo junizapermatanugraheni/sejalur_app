@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum SingingCharacter { Female, Male }
+enum SingingCharacter { female, male }
 
 class RegisterWidget extends StatefulWidget {
   const RegisterWidget({super.key});
@@ -10,7 +10,7 @@ class RegisterWidget extends StatefulWidget {
 }
 
 class _RegisterWidgetState extends State<RegisterWidget> {
-  SingingCharacter? _character = SingingCharacter.Female;
+  SingingCharacter? _character = SingingCharacter.male;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
             Expanded(
               child: RadioListTile<SingingCharacter>(
                 title: const Text('Laki - laki'),
-                value: SingingCharacter.Male,
+                value: SingingCharacter.male,
                 groupValue: _character,
                 onChanged: (SingingCharacter? value) {
                   setState(() {
@@ -33,7 +33,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
             Expanded(
               child: RadioListTile<SingingCharacter>(
                 title: const Text('Perempuan'),
-                value: SingingCharacter.Female,
+                value: SingingCharacter.female,
                 groupValue: _character,
                 onChanged: (SingingCharacter? value) {
                   setState(() {

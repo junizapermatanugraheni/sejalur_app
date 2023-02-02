@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-
 import '../../../../constants/sizes.dart';
-import '../../models/model_splash_screen.dart';
+import '../../models/model_slider_screen.dart';
 
-class SplashScreenPageWidget extends StatelessWidget {
-  const SplashScreenPageWidget({
+class SliderScreenPageWidget extends StatelessWidget {
+  const SliderScreenPageWidget({
     super.key,
     required this.model,
   });
 
-  final SplashScreenModel model;
+  final SliderScreenModel model;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class SplashScreenPageWidget extends StatelessWidget {
         children: [
           Column(
             children: [
-              Text(model.title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26)
+              Text(model.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 26)
               ),
             ],
           ),
@@ -31,8 +30,8 @@ class SplashScreenPageWidget extends StatelessWidget {
             height: size.height * 0.4,),
           Column(
             children: [
-              Text(model.subTitle, textAlign: TextAlign.center, style: TextStyle(fontSize: 15),),
-              SizedBox(height: 90.0,)
+              Text(model.subTitle, textAlign: TextAlign.center, style: const TextStyle(fontSize: 15),),
+              const SizedBox(height: 90.0,)
             ]
           ),
         ],

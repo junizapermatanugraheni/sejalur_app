@@ -17,6 +17,7 @@ const String tLogin = "Login";
 
 //Text Register Screen
 const String tTitleHeader = "Registrasi Penumpang";
+const String tRegisName = "Nama Lengkap";
 const String tRegisUser = "Username";
 const String tRegisEmail = "Email";
 const String tRegisPass = "Password";
@@ -27,6 +28,21 @@ const String tRegisAlamat = "Alamat";
 const String tRegisJkl = "Laki - laki";
 const String tRegisJkp = "Perempuan";
 const String tRegisButton = "Registrasi";
+
+//Text Forgot Password Screen
+const String tForgotTitle = "Forgot Password";
+const String tForgotEmail = "E-mail";
+const String tForgotButton = "Kirim";
+
+//Text Kode OTP Screen
+const String tKodeTitle = "Kode OTP";
+const String tKodeButton = "Kirim";
+
+//Text Reset Password
+const String tResetTitle = "Reset Password";
+const String tResetPass = "New Password";
+const String tResetPassKonf = "Confirm new password";
+const String tResetButton = "Perbarui";
 
 
 

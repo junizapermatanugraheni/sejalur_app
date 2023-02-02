@@ -1,13 +1,13 @@
 import 'dart:ui';
 
-class SplashScreenModel{
+class SliderScreenModel{
   final String image;
   final String title;
   final String subTitle;
   final Color bgColor;
   // final double height;
 
-  SplashScreenModel({
+  SliderScreenModel({
     required this.image,
     required this.title,
     required this.subTitle,

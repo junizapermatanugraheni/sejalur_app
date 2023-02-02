@@ -2,7 +2,7 @@ name: sijalur_app
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.0 <3.0.0'
+  sdk: ">=2.19.0 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -40,24 +39,13 @@ dependencies:
   liquid_swipe: ^3.0.0
   smooth_page_indicator: ^1.0.0+2
   get: ^4.6.5
+  flutter_otp_text_field: ^1.1.1
+  introduction_screen: ^3.1.4
+  persistent_bottom_nav_bar: ^5.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-flutter_native_splash:
-  color: "#ffffff"
-  image: assets/images/logo.png
-  color_dark: "272727"
-  image_dark: assets/images/logo.png
-
-android_12:
-  image: assets/images/logo.png
-  icon_background_color: "#ffffff"
-  image_dark: assets/images/logo.png
-  icon_background_color_dark: "#272727"
-
-  web: false
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -71,14 +59,12 @@ android_12:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
   assets:
-  - assets/images/
-
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
