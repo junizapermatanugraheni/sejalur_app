@@ -15,7 +15,7 @@ class LoginHeaderWidget extends StatelessWidget {
       children: const [
         Image(image: AssetImage(tLogoLoginScreen)),
         SizedBox(height: tFormHeight,),
-        Text(tLoginTitle, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+        Text(tLoginTitle, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.black54),),
       ],
     );
   }
