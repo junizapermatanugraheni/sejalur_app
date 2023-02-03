@@ -18,3 +18,6 @@ const String tResetScreen = "assets/images/reset.png";
 //Logo Google
 const String tLogoGoogle = "assets/images/logo_google.png";
 
+//Photo Profile
+const String tProfile = "assets/images/profile_1.jpg";
+

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sijalur_app/src/features/authentication/screens/login/login_screen.dart';
-// import 'package:sijalur_app/src/features/authentication/screens/splashscreen/splash_screen.dart';
 import 'package:sijalur_app/src/utils/theme/theme.dart';
 
 void main() {

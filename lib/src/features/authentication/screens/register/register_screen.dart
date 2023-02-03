@@ -24,27 +24,31 @@ class RegisterScreen extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Container(
-            padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-              child: Stack(
+            padding: const EdgeInsets.only(left: 15, top: 10, right: 15),
+              child: Column(
                 children: [
-                  Center(
-                    child: Container(
-                      width: 105,
-                      height: 105,
-                      decoration: BoxDecoration(
-                          border: Border.all(width: 4, color: Colors.white),
-                          boxShadow: [
-                            BoxShadow(
-                                spreadRadius: 1,
-                                blurRadius: 5,
-                                color: Colors.black.withOpacity(0.1)
-                            ),
-                          ],
-                          shape: BoxShape.circle
+                  Container(
+                    width: 130,
+                    height: 130,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 4, color: Colors.white),
+                      boxShadow: [
+                        BoxShadow(
+                          spreadRadius: 2,
+                          blurRadius: 10,
+                          color: Colors.black.withOpacity(0.1),
+                        ),
+                      ],
+                      shape: BoxShape.circle,
+                      image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                            'https://cdn.pixabay.com/photo/2016/12/19/21/36/woman-1919143_960_720.jpg'
+                        ),
                       ),
                     ),
                   ),
-                  const RegisterForm(),
+                   const RegisterForm(),
                 ],
               ),
             ),
