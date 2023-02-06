@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183913286128",
+    "project_id": "sejalurapp",
+    "storage_bucket": "sejalurapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183913286128:android:f9396dea15d87121b1f535",
+        "android_client_info": {
+          "package_name": "com.example.sijalur_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183913286128-hi1kbsg58oarq2lfi3oedj5v3g6kcims.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRWDISiv_OZqddhfkSXzBJ8eHdYjX0nKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183913286128-hi1kbsg58oarq2lfi3oedj5v3g6kcims.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

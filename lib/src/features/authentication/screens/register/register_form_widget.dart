@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
+// import 'package:get/get.dart';
+// import 'package:sijalur_app/src/features/authentication/controllers/register_controller.dart';
 import 'package:sijalur_app/src/features/authentication/screens/register/register_widget.dart';
 import '../../../../constants/text_string.dart';
 
@@ -11,6 +13,7 @@ class RegisterForm extends StatefulWidget {
 }
 
 class _StatefulWidgetState extends State<StatefulWidget> {
+  // final controller = Get.put(RegisterController());
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final passwordValidator = MultiValidator([
     RequiredValidator(errorText: 'password is required'),
@@ -39,6 +42,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextFormField(
+              // controller: controller.fullname,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.supervisor_account),
                 prefixIconColor: Colors.orange,
@@ -52,6 +56,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               },
             ),
             TextFormField(
+              // controller: controller.username,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.supervisor_account),
                 prefixIconColor: Colors.orange,
@@ -65,6 +70,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               },
             ),
             TextFormField(
+              // controller: controller.email,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.email_rounded),
                 prefixIconColor: Colors.orange,
@@ -78,6 +84,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               ),
             ),
             TextFormField(
+              // controller: controller.password,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock),
                 prefixIconColor: Colors.orange,
@@ -86,6 +93,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               validator: passwordValidator,
             ),
             TextFormField(
+              // controller: controller.konfpassword,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock),
                 prefixIconColor: Colors.orange,
@@ -94,6 +102,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               validator: passwordValidator,
             ),
             TextFormField(
+              // controller: controller.nomorIdentitas,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.credit_card),
                 prefixIconColor: Colors.orange,
@@ -107,6 +116,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               },
             ),
             TextFormField(
+              // controller: controller.phone,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.phone),
                 prefixIconColor: Colors.orange,
@@ -120,6 +130,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               },
             ),
             TextFormField(
+              // controller: controller.alamat,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.home_filled),
                 prefixIconColor: Colors.orange,
@@ -137,7 +148,7 @@ class _StatefulWidgetState extends State<StatefulWidget> {
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
-                onPressed: validate,
+                onPressed: (){},
                 child: Text(tRegisButton.toUpperCase(),
                 ),
               ),

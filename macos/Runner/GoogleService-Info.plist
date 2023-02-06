@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1076069298343-8vnsuno43lsa361g4fue71qlsa8ed3a0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1076069298343-8vnsuno43lsa361g4fue71qlsa8ed3a0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBbyQFjVKE3rkDD4RWp4Yf3hS65RSnjHRI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1076069298343</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.sijalurApp</string>
+	<key>PROJECT_ID</key>
+	<string>my-project-oka</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-project-oka.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1076069298343:ios:d0486417e1bd73434e2b82</string>
+	<key>DATABASE_URL</key>
+	<string>https://my-project-oka.firebaseio.com</string>
+</dict>
+</plist>
